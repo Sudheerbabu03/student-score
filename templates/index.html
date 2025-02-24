@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/cs/style.css' %}">
+
+    <!-- <link rel="stylesheet" href="{% static 'C:\Users\Sudheer Babu\OneDrive\Desktop\dj-a4\sudheer\Scripts\grade\static\css\cs\style.css' %}"> -->
+</head>
+<body>
+    <form action="grade/" method="POST">
+        {% csrf_token %}
+        <div class="con">
+            <header>
+                <h1>Student Grade</h1>
+            </header>
+            <table class="tab">
+                <tr>
+                    <th><h2>Name:</h2></th>
+                    <td><input type="text" name="name" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <th><h2>Python:</h2></th>
+                    <td><input type="number" name="p-marks" placeholder="Enter your Marks"></td>
+                </tr>
+                <tr>
+                    <th><h2>SQL:</h2></th>
+                    <td><input type="number" name="s-marks" placeholder="Enter your Marks"></td>
+                </tr>
+                <tr>
+                    <th><h2>Django:</h2></th>
+                    <td><input type="number" name="d-marks" placeholder="Enter your Marks"></td>
+                </tr>
+    
+            </table>
+            <input style="cursor: pointer;width: 100px;background-color: yellow;" type="submit" name="operation" value="Total">
+            <input style="cursor: pointer;width: 100px;background-color: rgb(103, 103, 224);color: white;" type="submit" name="operation" value="Percentage">
+            <input style="cursor: pointer;width: 100px;background-color: rgb(103, 103, 224);color: white;" type="submit" name="operation" value="Grade">
+            <input style="cursor: pointer;width: 100px;background-color: rgb(103, 103, 224);color: white;" type="submit" name="operation" value="Status">
+            <!-- <h2 style="margin-bottom: 20px;"><span><input style="margin-bottom: 20px; width: 200px;border-radius: 20px;box-sizing: none;" type="text" name="per"></span></h2> -->
+            <input type="text" name="res" style="margin-bottom: 30px;margin-top: 20px; border-radius: 20px; border: 1px solid brown;"  value={{result}}>
+        </div>
+    </form>
+    
+</body>
+</html>

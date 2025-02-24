@@ -1,0 +1,17 @@
+
+.con{
+    background-color: rgb(249, 237, 237);
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+    border:solid  rgb(39, 38, 41) 2px ;
+    box-shadow: 2px 2px 5px 5px rgb(249, 237, 237);
+}
+.tab{
+    margin-left: 50px;
+    
+}
+input{
+    width: 250px;
+    height: 40px
+}
