@@ -1,4 +1,6 @@
-
+body{
+    background-color: rgb(56, 209, 220);
+}
 .con{
     background-color: rgb(249, 237, 237);
     margin: 100px auto;

@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-=od9z_x@p3dhx20c7#k1)dg!#a6x2i0f$u^5bzs$88&jr!n03(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+import os
 
+ALLOWED_HOSTS = ["*"]  # Allow all hosts temporarily
+
+# Ensure Django listens on the correct port
+PORT = os.getenv("PORT", "8000")
 
 # Application definition
 
